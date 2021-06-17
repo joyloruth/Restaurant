@@ -134,7 +134,8 @@ public class RestaurantManager extends javax.swing.JFrame {
         jLabel7.setText("Root Beer Float");
 
         jTextField4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField4.setText(" ");
+        jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField4.setText("0");
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField4ActionPerformed(evt);
@@ -142,7 +143,8 @@ public class RestaurantManager extends javax.swing.JFrame {
         });
 
         jTextField5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField5.setText(" ");
+        jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField5.setText("0");
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField5ActionPerformed(evt);
@@ -150,7 +152,8 @@ public class RestaurantManager extends javax.swing.JFrame {
         });
 
         jTextField6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField6.setText(" ");
+        jTextField6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField6.setText("0");
         jTextField6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField6ActionPerformed(evt);
@@ -168,7 +171,8 @@ public class RestaurantManager extends javax.swing.JFrame {
         jLabel17.setText("Dasani");
 
         jTextField13.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField13.setText(" ");
+        jTextField13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField13.setText("0");
         jTextField13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField13ActionPerformed(evt);
@@ -176,7 +180,8 @@ public class RestaurantManager extends javax.swing.JFrame {
         });
 
         jTextField14.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField14.setText(" ");
+        jTextField14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField14.setText("0");
         jTextField14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField14ActionPerformed(evt);
@@ -217,7 +222,7 @@ public class RestaurantManager extends javax.swing.JFrame {
                         .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(49, 49, 49))
             .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(161, 161, 161)
+                .addGap(126, 126, 126)
                 .addComponent(jLabel14)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -283,15 +288,15 @@ public class RestaurantManager extends javax.swing.JFrame {
         jPanel8Layout.setHorizontalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(174, 174, 174)
+                .addGap(187, 187, 187)
                 .addComponent(jButton1)
-                .addGap(31, 31, 31)
+                .addGap(18, 18, 18)
                 .addComponent(jButton2)
-                .addGap(37, 37, 37)
+                .addGap(18, 18, 18)
                 .addComponent(jButton3)
                 .addGap(18, 18, 18)
                 .addComponent(jButton4)
-                .addContainerGap(180, Short.MAX_VALUE))
+                .addContainerGap(199, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -314,7 +319,8 @@ public class RestaurantManager extends javax.swing.JFrame {
         jLabel26.setText("Cheese Burger");
 
         jTextField20.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField20.setText(" ");
+        jTextField20.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField20.setText(" 0");
         jTextField20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField20ActionPerformed(evt);
@@ -322,7 +328,8 @@ public class RestaurantManager extends javax.swing.JFrame {
         });
 
         jTextField21.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField21.setText(" ");
+        jTextField21.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField21.setText("0");
         jTextField21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField21ActionPerformed(evt);
@@ -330,7 +337,8 @@ public class RestaurantManager extends javax.swing.JFrame {
         });
 
         jTextField22.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField22.setText(" ");
+        jTextField22.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField22.setText("0");
         jTextField22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField22ActionPerformed(evt);
@@ -345,10 +353,11 @@ public class RestaurantManager extends javax.swing.JFrame {
         jLabel28.setText("Fish Sandwich");
 
         jLabel29.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel29.setText("Bacon Burger");
+        jLabel29.setText("Vegan Burger");
 
         jTextField23.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField23.setText(" ");
+        jTextField23.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField23.setText("0");
         jTextField23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField23ActionPerformed(evt);
@@ -364,7 +373,7 @@ public class RestaurantManager extends javax.swing.JFrame {
         });
 
         jLabel30.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel30.setText("Bacon Burger");
+        jLabel30.setText("BLT Sandwich");
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -381,10 +390,6 @@ public class RestaurantManager extends javax.swing.JFrame {
                         .addComponent(jLabel26)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel11Layout.createSequentialGroup()
-                        .addComponent(jLabel25)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
-                        .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel11Layout.createSequentialGroup()
                         .addComponent(jLabel28)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -394,12 +399,14 @@ public class RestaurantManager extends javax.swing.JFrame {
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addComponent(jLabel30)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel11Layout.createSequentialGroup()
+                        .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel27)
+                            .addComponent(jLabel25))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                        .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(49, 49, 49))
-            .addGroup(jPanel11Layout.createSequentialGroup()
-                .addGap(161, 161, 161)
-                .addComponent(jLabel27)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -441,7 +448,8 @@ public class RestaurantManager extends javax.swing.JFrame {
         jLabel35.setText("Total");
 
         jTextField30.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField30.setText(" ");
+        jTextField30.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField30.setText("0");
         jTextField30.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField30ActionPerformed(evt);
@@ -449,7 +457,8 @@ public class RestaurantManager extends javax.swing.JFrame {
         });
 
         jTextField31.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField31.setText(" ");
+        jTextField31.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField31.setText("0");
         jTextField31.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField31ActionPerformed(evt);
@@ -457,7 +466,8 @@ public class RestaurantManager extends javax.swing.JFrame {
         });
 
         jTextField32.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField32.setText(" ");
+        jTextField32.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField32.setText("0");
         jTextField32.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField32ActionPerformed(evt);
@@ -514,7 +524,8 @@ public class RestaurantManager extends javax.swing.JFrame {
         jLabel38.setText("Meal Total");
 
         jTextField33.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField33.setText(" ");
+        jTextField33.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField33.setText("0");
         jTextField33.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField33ActionPerformed(evt);
@@ -522,7 +533,8 @@ public class RestaurantManager extends javax.swing.JFrame {
         });
 
         jTextField34.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField34.setText(" ");
+        jTextField34.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField34.setText("0");
         jTextField34.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField34ActionPerformed(evt);
