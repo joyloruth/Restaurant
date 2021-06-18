@@ -29,9 +29,6 @@ public class RestaurantManager extends javax.swing.JFrame {
 
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
         drinksPanel = new javax.swing.JPanel();
         milkshake = new javax.swing.JLabel();
         rootBeerFloat = new javax.swing.JLabel();
@@ -57,7 +54,7 @@ public class RestaurantManager extends javax.swing.JFrame {
         jTextField22 = new javax.swing.JTextField();
         mealsPanel = new javax.swing.JLabel();
         fishSandwich = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
+        veganBurger = new javax.swing.JLabel();
         jTextField23 = new javax.swing.JTextField();
         jTextField24 = new javax.swing.JTextField();
         jLabel30 = new javax.swing.JLabel();
@@ -75,6 +72,7 @@ public class RestaurantManager extends javax.swing.JFrame {
         jTextField33 = new javax.swing.JTextField();
         jTextField34 = new javax.swing.JTextField();
         jTextField35 = new javax.swing.JTextField();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -90,42 +88,21 @@ public class RestaurantManager extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(236, 236, 236)
+                .addGap(79, 79, 79)
                 .addComponent(jLabel1)
-                .addContainerGap(466, Short.MAX_VALUE))
+                .addContainerGap(283, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
+                .addGap(20, 20, 20)
                 .addComponent(jLabel1)
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1390, -1));
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1050, -1));
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 278, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 468, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(159, 159, 159))
-        );
-
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 120, 300, 500));
+        drinksPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(null, null, new java.awt.Color(0, 0, 0), null, null));
 
         milkshake.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         milkshake.setText("Milkshake");
@@ -207,7 +184,7 @@ public class RestaurantManager extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(drinksPanelLayout.createSequentialGroup()
                         .addComponent(milkshake)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
                         .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(drinksPanelLayout.createSequentialGroup()
                         .addComponent(softDrink)
@@ -254,10 +231,17 @@ public class RestaurantManager extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        getContentPane().add(drinksPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 120, 360, 270));
+        getContentPane().add(drinksPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 120, 360, 300));
+
+        jPanel8.setBorder(javax.swing.BorderFactory.createBevelBorder(null, null, new java.awt.Color(0, 0, 0), null, null));
 
         totalButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         totalButton.setText("Total");
+        totalButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                totalButtonActionPerformed(evt);
+            }
+        });
 
         receiptButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         receiptButton.setText("Receipt");
@@ -296,12 +280,12 @@ public class RestaurantManager extends javax.swing.JFrame {
                 .addComponent(resetButton)
                 .addGap(18, 18, 18)
                 .addComponent(exitButton)
-                .addContainerGap(199, Short.MAX_VALUE))
+                .addContainerGap(197, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
-                .addContainerGap(16, Short.MAX_VALUE)
+                .addContainerGap(14, Short.MAX_VALUE)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(totalButton)
                     .addComponent(receiptButton)
@@ -310,7 +294,7 @@ public class RestaurantManager extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        getContentPane().add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 560, 740, 60));
+        getContentPane().add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 590, 740, 60));
 
         chickenSandwich.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         chickenSandwich.setText("Chicken Sandwich");
@@ -352,8 +336,8 @@ public class RestaurantManager extends javax.swing.JFrame {
         fishSandwich.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         fishSandwich.setText("Fish Sandwich");
 
-        jLabel29.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel29.setText("Vegan Burger");
+        veganBurger.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        veganBurger.setText("Vegan Burger");
 
         jTextField23.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jTextField23.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -383,7 +367,7 @@ public class RestaurantManager extends javax.swing.JFrame {
                 .addGap(40, 40, 40)
                 .addGroup(MealsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(MealsPanelLayout.createSequentialGroup()
-                        .addComponent(jLabel29)
+                        .addComponent(veganBurger)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MealsPanelLayout.createSequentialGroup()
@@ -427,7 +411,7 @@ public class RestaurantManager extends javax.swing.JFrame {
                     .addComponent(cheeseBurger))
                 .addGap(18, 18, 18)
                 .addGroup(MealsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel29)
+                    .addComponent(veganBurger)
                     .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(MealsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -436,7 +420,9 @@ public class RestaurantManager extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        getContentPane().add(MealsPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 370, 270));
+        getContentPane().add(MealsPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 370, 300));
+
+        jPanel13.setBorder(javax.swing.BorderFactory.createBevelBorder(null, null, new java.awt.Color(0, 0, 0), null, null));
 
         tax.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         tax.setText("Tax");
@@ -484,7 +470,7 @@ public class RestaurantManager extends javax.swing.JFrame {
                     .addComponent(subTotal)
                     .addComponent(tax)
                     .addComponent(jLabel35))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 93, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTextField31, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -509,10 +495,10 @@ public class RestaurantManager extends javax.swing.JFrame {
                         .addComponent(jTextField31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jTextField32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 400, 360, 150));
+        getContentPane().add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 430, 360, 150));
 
         jLabel36.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel36.setText("Meal Cost");
@@ -587,7 +573,20 @@ public class RestaurantManager extends javax.swing.JFrame {
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 370, 150));
+        getContentPane().add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 430, 370, 150));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 120, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
@@ -669,6 +668,10 @@ public class RestaurantManager extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField35ActionPerformed
 
+    private void totalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalButtonActionPerformed
+        
+    }//GEN-LAST:event_totalButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -714,19 +717,16 @@ public class RestaurantManager extends javax.swing.JFrame {
     private javax.swing.JLabel fishSandwich;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel8;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField14;
     private javax.swing.JTextField jTextField20;
@@ -753,6 +753,7 @@ public class RestaurantManager extends javax.swing.JFrame {
     private javax.swing.JLabel subTotal;
     private javax.swing.JLabel tax;
     private javax.swing.JButton totalButton;
+    private javax.swing.JLabel veganBurger;
     private javax.swing.JLabel water;
     // End of variables declaration//GEN-END:variables
 }
